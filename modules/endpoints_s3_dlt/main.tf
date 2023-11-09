@@ -1,4 +1,4 @@
-resource "aws_dms_dlt_s3_endpoint" "this" {
+resource "aws_dms_s3_endpoint" "this" {
   count = var.create ? 1 : 0
 
   certificate_arn = var.certificate_arn
